@@ -43,7 +43,7 @@ npx sequelize-cli db:migrate
 npx sequelize-cli db:seed:all
 
 # 5. Create test database and run tests
-psql -h localhost -p 5433 -U postgres -c "CREATE DATABASE rickmorty_test;"
+docker exec -it rm-postgres-docker psql -U postgres -c "CREATE DATABASE rickmorty_test;"
 npm test
 
 # 6. Start server
