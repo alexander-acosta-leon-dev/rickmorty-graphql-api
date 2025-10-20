@@ -26,8 +26,8 @@ A GraphQL API for querying Rick & Morty characters with filtering, caching, and 
 
 ```bash
 # 1. Clone and install
-git clone <your-repo-url>
-cd rickmorty-api
+git clone https://github.com/alexander-acosta-leon-dev/rickmorty-graphql-api.git
+cd rickmorty-graphql-api
 npm install
 
 # 2. Copy environment file
