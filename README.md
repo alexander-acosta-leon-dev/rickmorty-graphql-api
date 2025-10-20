@@ -32,7 +32,7 @@ npm install
 
 # 2. Copy environment file
 cp .env.example .env
-# Edit .env and set DATABASE_PASSWORD=root
+# (No editing needed - default values work with Docker setup)
 
 # 3. Start databases with Docker
 docker run --name rm-postgres-docker -e POSTGRES_PASSWORD=root -e POSTGRES_DB=rickmorty -p 5433:5432 -d postgres:13
