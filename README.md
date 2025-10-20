@@ -42,7 +42,8 @@ docker run --name rm-redis -p 6379:6379 -d redis
 npx sequelize-cli db:migrate
 npx sequelize-cli db:seed:all
 
-# 5. Run tests
+# 5. Create test database and run tests
+psql -h localhost -p 5433 -U postgres -c "CREATE DATABASE rickmorty_test;"
 npm test
 
 # 6. Start server
